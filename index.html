@@ -141,6 +141,12 @@
   .check{display:flex;gap:14px;align-items:flex-start;font-weight:600;color:var(--ink);}
   .check svg{flex:none;margin-top:3px;}
 
+  /* Photography */
+  .photo-figure{margin:0;}
+  .family-photo{width:100%;height:520px;object-fit:cover;object-position:50% 72%;border-radius:8px;box-shadow:var(--shadow);}
+  .photo-credit{margin-top:9px;color:var(--muted);font-size:.74rem;text-align:right;}
+  .photo-credit a{text-decoration:underline;text-underline-offset:2px;}
+
   /* Packages */
   .pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:48px;}
   .pkg{display:flex;flex-direction:column;background:#fff;border:1px solid var(--gray);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow-sm);transition:transform .18s, box-shadow .18s;}
@@ -206,6 +212,7 @@
     .steps{grid-template-columns:1fr;}
     .highlight-box{flex-direction:column;text-align:center;}
     .form-card{padding:26px;}
+    .family-photo{height:430px;}
   }
 </style>
 </head>
@@ -517,37 +524,10 @@
 <section class="section alt" id="family">
   <div class="wrap grid-2">
     <div class="reveal">
-      <svg viewBox="0 0 440 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A child and adult using a telescope outdoors at night" style="border-radius:20px;box-shadow:var(--shadow);">
-        <defs>
-          <linearGradient id="fam1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0e2f5c"/><stop offset="100%" stop-color="#071A33"/></linearGradient>
-          <radialGradient id="famMoon" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#fff4cf"/><stop offset="100%" stop-color="#F4C430"/></radialGradient>
-        </defs>
-        <rect width="440" height="380" rx="20" fill="url(#fam1)"/>
-        <circle cx="330" cy="90" r="46" fill="url(#famMoon)"/>
-        <g fill="#fff"><circle cx="70" cy="60" r="2"/><circle cx="140" cy="40" r="1.4"/><circle cx="200" cy="70" r="1.6"/><circle cx="400" cy="160" r="1.6"/><circle cx="60" cy="150" r="1.4"/></g>
-        <!-- ground -->
-        <path d="M0 320 Q220 290 440 320 V380 H0 Z" fill="#0a233f"/>
-        <!-- adult -->
-        <g>
-          <circle cx="150" cy="190" r="18" fill="#cdd9ec"/>
-          <rect x="134" y="206" width="32" height="70" rx="14" fill="#123a6e"/>
-        </g>
-        <!-- child -->
-        <g>
-          <circle cx="196" cy="225" r="14" fill="#F4C430"/>
-          <rect x="184" y="238" width="24" height="52" rx="11" fill="#1a4d8a"/>
-        </g>
-        <!-- telescope on tripod -->
-        <g stroke="#cdd9ec" stroke-width="4" stroke-linecap="round">
-          <line x1="270" y1="300" x2="290" y2="230"/>
-          <line x1="310" y1="300" x2="290" y2="230"/>
-          <line x1="290" y1="300" x2="290" y2="250"/>
-        </g>
-        <g transform="translate(258 200) rotate(-28)">
-          <rect x="0" y="0" width="80" height="20" rx="10" fill="#F4C430"/>
-          <circle cx="80" cy="10" r="12" fill="#0c2750" stroke="#fff" stroke-width="2"/>
-        </g>
-      </svg>
+      <figure class="photo-figure">
+        <img class="family-photo" src="family-stargazing.jpg" alt="A family observing the night sky together with a telescope" loading="lazy" width="1600" height="2400" />
+        <figcaption class="photo-credit">Photo by <a href="https://www.pexels.com/photo/family-doing-stargazing-8364938/" target="_blank" rel="noopener">Josh Willink on Pexels</a></figcaption>
+      </figure>
     </div>
     <div class="reveal">
       <div class="eyebrow dark">The Family Experience</div>
