@@ -159,6 +159,18 @@
   .photo-credit{margin-top:9px;color:var(--muted);font-size:.74rem;text-align:right;}
   .photo-credit a{text-decoration:underline;text-underline-offset:2px;}
 
+  /* Student materials gallery */
+  .worksheet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px;}
+  .materials-sec{background:#eef6ff;}
+  .worksheet-item{margin:0;background:var(--white);border:1px solid var(--gray);border-radius:8px;overflow:hidden;box-shadow:var(--shadow-sm);}
+  .worksheet-link{display:block;background:var(--gray-bg);overflow:hidden;}
+  .worksheet-link img{width:100%;height:auto;transition:transform .2s ease;}
+  .worksheet-link:hover img{transform:scale(1.015);}
+  .worksheet-meta{padding:18px 20px 20px;}
+  .worksheet-meta h3{font-size:1.18rem;margin-bottom:5px;}
+  .worksheet-meta p{color:var(--muted);font-size:.9rem;margin:0;}
+  .prototype-note{margin:24px auto 0;max-width:760px;text-align:center;color:var(--muted);font-size:.84rem;}
+
   /* Packages */
   .pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:48px;}
   .pkg{display:flex;flex-direction:column;background:#fff;border:1px solid var(--gray);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow-sm);transition:transform .18s, box-shadow .18s;}
@@ -218,6 +230,8 @@
     .nav-links{display:none;}
     .menu-btn{display:block;}
     .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--navy);padding:20px 24px;gap:18px;border-bottom:1px solid rgba(255,255,255,.1);}
+    .worksheet-grid{grid-template-columns:repeat(3,minmax(270px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;}
+    .worksheet-item{scroll-snap-align:start;}
   }
   @media(max-width:560px){
     .section{padding:60px 0;}
@@ -396,6 +410,38 @@
         <p>Reflection and classroom sharing ask students to organize evidence, explain their thinking, and learn from their classmates' observations.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ STUDENT MATERIALS ============ -->
+<section class="section materials-sec" id="materials">
+  <div class="wrap">
+    <div class="center reveal">
+      <div class="eyebrow dark">See the Learning</div>
+      <h2 style="font-size:clamp(1.9rem,3.6vw,2.7rem);">Grade-level missions turn observation into evidence</h2>
+      <p class="lead" style="margin-top:16px;">Each student brings home a focused reflection sheet designed to match their grade-level thinking, then returns with observations, questions, and ideas to share.</p>
+    </div>
+    <div class="worksheet-grid">
+      <figure class="worksheet-item reveal">
+        <a class="worksheet-link" href="grade-3-mission.webp" target="_blank" rel="noopener" aria-label="Open the full Grade 3 MoonQuest mission sheet">
+          <img src="grade-3-mission.webp" alt="Prototype Grade 3 MoonQuest weather and Moon observation mission sheet" loading="lazy" width="1104" height="1422" />
+        </a>
+        <figcaption class="worksheet-meta"><h3>Grade 3</h3><p>Weather, Moon observation, drawing, noticing, and family talk.</p></figcaption>
+      </figure>
+      <figure class="worksheet-item reveal">
+        <a class="worksheet-link" href="grade-4-mission.webp" target="_blank" rel="noopener" aria-label="Open the full Grade 4 MoonQuest mission sheet">
+          <img src="grade-4-mission.webp" alt="Prototype Grade 4 MoonQuest evidence explorer mission sheet" loading="lazy" width="1104" height="1422" />
+        </a>
+        <figcaption class="worksheet-meta"><h3>Grade 4</h3><p>Observation details, visual evidence, evidence sentences, and comparison.</p></figcaption>
+      </figure>
+      <figure class="worksheet-item reveal">
+        <a class="worksheet-link" href="grade-5-mission.webp" target="_blank" rel="noopener" aria-label="Open the full Grade 5 MoonQuest mission sheet">
+          <img src="grade-5-mission.webp" alt="Prototype Grade 5 MoonQuest Moon pattern scientist mission sheet" loading="lazy" width="1104" height="1422" />
+        </a>
+        <figcaption class="worksheet-meta"><h3>Grade 5</h3><p>Observation data, Moon position, pattern thinking, and class comparison.</p></figcaption>
+      </figure>
+    </div>
+    <p class="prototype-note reveal">Prototype material previews. Final instructional language and grade-level alignment will be reviewed before classroom release.</p>
   </div>
 </section>
 
