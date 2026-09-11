@@ -101,6 +101,9 @@
   .trust{display:flex;align-items:center;gap:10px;font-family:'League Spartan';font-weight:700;color:var(--gold-soft);font-size:.95rem;letter-spacing:.03em;}
   .trust svg{flex:none;}
   .hero-art{position:relative;}
+  .hero-art > svg{display:none;}
+  .hero-shot{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center;border-radius:8px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.32);}
+  .hero-caption{margin:9px 4px 0;color:#9fb0c9;font-size:.75rem;text-align:right;}
 
   /* Generic cards / grids */
   .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
@@ -269,6 +272,8 @@
         </div>
       </div>
       <div class="hero-art">
+        <img class="hero-shot" src="moonquest-kit-hero.webp" alt="Concept rendering of a MoonQuest Explorer Kit with telescope, carry bag, Moon book, phase guide, reflection sheet, eyepieces, and family mission card" width="1536" height="1024" fetchpriority="high" />
+        <p class="hero-caption">Concept rendering. Final kit contents and appearance may vary.</p>
         <!-- Hero illustration: kit, telescope, book, reflection sheet, mission card under a moon -->
         <svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MoonQuest Explorer Kit with telescope, Moon-themed book, reflection sheet, and family mission card under a full moon and stars">
           <defs>
